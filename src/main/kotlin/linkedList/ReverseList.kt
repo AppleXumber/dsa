@@ -1,6 +1,6 @@
 package linkedList
 
-class Solution() {
+class SolutionReverseList {
   fun reverseList(head: ListNode?): ListNode? {
     var newList: ListNode? = null
     var current = head
@@ -16,6 +16,3 @@ class Solution() {
   }
 }
 
-class ListNode(var value: Int) {
-  var next: ListNode? = null
-}
