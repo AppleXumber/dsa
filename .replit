@@ -18,3 +18,13 @@ pattern = "**/*.{kt,kts,java}"
 
 [languages.kotlin.languageServer]
 start = ["kotlin-language-server"]
+
+[workflows]
+
+[[workflows.workflow]]
+name = "Run Quicksort"
+author = 34756713
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "kotlinc -d quicksort.jar src/main/kotlin/sorting/Quicksort.kt && kotlin -classpath quicksort.jar sorting.QuicksortKt"
